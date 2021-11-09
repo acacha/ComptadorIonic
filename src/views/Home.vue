@@ -52,7 +52,7 @@ import {
 import { defineComponent } from 'vue';
 import { informationCircleOutline } from "ionicons/icons";
 
-const INITIAL_TIME = 5
+const INITIAL_TIME = 60
 
 export default defineComponent({
   name: 'Home',
@@ -85,7 +85,6 @@ export default defineComponent({
   watch: {
     timeLeft: function(newTimeLeft) {
       if (newTimeLeft <= 0) {
-        console.log('FINAL')
         this.started = false
         this.timeLeft = INITIAL_TIME
         clearInterval(this.counterInterval)
@@ -110,8 +109,6 @@ export default defineComponent({
       if (!this.started) {
         this.counterInterval = setInterval(() => {
           this.timeLeft--
-          console.log('Hey')
-          console.log(this.timeLeft);
         },1000)
         this.started = true
       }
