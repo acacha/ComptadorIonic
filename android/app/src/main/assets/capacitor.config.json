@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "ComptadorIonic",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}
