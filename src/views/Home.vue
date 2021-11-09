@@ -30,8 +30,7 @@
       </ion-header>
     
       <div id="container">
-
-        <ion-button color="primary" @click="tap">Tap Me</ion-button>
+        <ion-button id="tapMeButton" ref="tapMeButton" color="primary" @click="tap">Tap Me</ion-button>
       </div>
     </ion-content>
   </ion-page>
@@ -51,6 +50,7 @@ import {
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import { informationCircleOutline } from "ionicons/icons";
+import { createAnimation } from '@ionic/vue';
 
 const INITIAL_TIME = 60
 
@@ -73,7 +73,7 @@ export default defineComponent({
     return {
       infoIcon: informationCircleOutline,
       started: false,
-      counterInterval: null
+      counterInterval: null,
     }
   },
   data () {
@@ -94,6 +94,13 @@ export default defineComponent({
     }
   },
   methods: {
+    bounce () {
+      const animation = createAnimation()
+      animation.addElement(document.getElementById('tapMeButton'))
+          .duration(2000)
+          .fromTo('transform', 'scale(2.0)', 'scale(1.0)')
+      animation.play();
+    },
     async info() {
         const alert = await alertController
             .create({
@@ -105,6 +112,7 @@ export default defineComponent({
         await alert.present();
     },
     tap () {
+      this.bounce()
       this.score++
       if (!this.started) {
         this.counterInterval = setInterval(() => {
