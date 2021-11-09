@@ -1,7 +1,7 @@
 <template>
   <ion-page>
     <ion-header :translucent="true">
-      <ion-toolbar>
+      <ion-toolbar color="secondary">
         <ion-title>Time fighter</ion-title>
         <ion-buttons slot="primary" >
           <ion-button color="primary" fill="solid" @click="info">
@@ -102,7 +102,6 @@ export default defineComponent({
       animation.play();
     },
     blink () {
-      console.log('BLINK!');
       const animation = createAnimation()
       animation.addElement(document.getElementById('score'))
           .duration(500)
