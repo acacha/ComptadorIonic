@@ -3,27 +3,56 @@
     <ion-header :translucent="true">
       <ion-toolbar>
         <ion-title>Time fighter</ion-title>
+        <ion-buttons slot="primary" >
+          <ion-button color="primary" fill="solid" @click="info">
+            <ion-icon :icon="infoIcon"></ion-icon>
+          </ion-button>
+        </ion-buttons>
       </ion-toolbar>
     </ion-header>
     
     <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Blank</ion-title>
-        </ion-toolbar>
+      <ion-header class="ion-no-border ion-padding-top ion-padding-horizontal">
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <div class="ion-text-start">
+                Your Score: {{ score }}
+              </div>
+            </ion-col>
+            <ion-col>
+              <div class="ion-text-end">
+                Time Left: {{ timeLeft }}
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
       </ion-header>
     
       <div id="container">
-        <strong>Yes: TODO AFEGIR EL BOTÓ DEL COMPTADOR</strong>
-        <p>PROVA!<a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+
+        <ion-button color="primary" @click="tap">Tap Me</ion-button>
       </div>
     </ion-content>
   </ion-page>
 </template>
 
 <script>
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+import {
+  alertController,
+  IonButton,
+  IonButtons, IonCol,
+  IonContent, IonGrid,
+  IonHeader,
+  IonIcon,
+  IonPage, IonRow,
+  IonTitle,
+  IonToolbar, toastController
+} from '@ionic/vue';
 import { defineComponent } from 'vue';
+import { informationCircleOutline } from "ionicons/icons";
+
+const INITIAL_TIME = 5
 
 export default defineComponent({
   name: 'Home',
@@ -32,7 +61,72 @@ export default defineComponent({
     IonHeader,
     IonPage,
     IonTitle,
-    IonToolbar
+    IonToolbar,
+    IonButtons,
+    IonButton,
+    IonIcon,
+    IonGrid,
+    IonRow,
+    IonCol
+  },
+  setup () {
+    return {
+      infoIcon: informationCircleOutline,
+      started: false,
+      counterInterval: null
+    }
+  },
+  data () {
+    return {
+      score: 0,
+      timeLeft: INITIAL_TIME
+    }
+  },
+  watch: {
+    timeLeft: function(newTimeLeft) {
+      if (newTimeLeft <= 0) {
+        console.log('FINAL')
+        this.started = false
+        this.timeLeft = INITIAL_TIME
+        clearInterval(this.counterInterval)
+        this.showResult()
+        this.score = 0
+      }
+    }
+  },
+  methods: {
+    async info() {
+        const alert = await alertController
+            .create({
+              header: 'Time Figther 1.0',
+              subHeader: 'Creat per Sergi Tur Badenas',
+              message: 'Podeu trobar el codi font a: <a href="https://github.com/acacha/ComptadorIonic">https://github.com/acacha/ComptadorIonic</a>',
+              buttons: ['OK'],
+            });
+        await alert.present();
+    },
+    tap () {
+      this.score++
+      if (!this.started) {
+        this.counterInterval = setInterval(() => {
+          this.timeLeft--
+          console.log('Hey')
+          console.log(this.timeLeft);
+        },1000)
+        this.started = true
+      }
+    },
+    async showResult() {
+      // TOAST
+      const toast = await toastController.create({
+        color: 'dark',
+        duration: 2000,
+        message: `Time's Up. Your Score was ${this.score}`,
+        showCloseButton: true
+      });
+
+      await toast.present();
+    }
   }
 });
 </script>
