@@ -27,3 +27,35 @@ Ionic ja no és hibrid sinó que amb Capacitor permet accedir a serveis natius e
 - Instal·lació android capacitor
 - Afegir la plataforma Android
 - Estructura d'una aplicació Ionic
+
+
+Comandes:
+
+```
+ionic --version
+ionic start
+ionic serve
+ionic capacitor add
+ionic capacitor copy android
+ionic capacitor run android
+ionic build
+ionic build android
+ionic cordova build android
+ionic capacitor run android -l --host=192.168.0.129
+
+Exemple de configuració de l'entorn:
+
+```bash
+cat ~/.zshrc
+export PATH=${PATH}:/home/sergi/Android/Sdk/platform-tools
+
+
+export ANDROID_SDK_ROOT=/home/sergi/Android/Sdk
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+
+export CAPACITOR_ANDROID_STUDIO_PATH=/home/sergi/phpstorm/studio
+
+export JAVA_HOME=/home/sergi/.local/share/JetBrains/Toolbox/apps/AndroidStudio/ch-0/203.7678000/jre/
+```
