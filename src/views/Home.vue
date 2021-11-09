@@ -17,7 +17,7 @@
           <ion-row>
             <ion-col>
               <div class="ion-text-start">
-                Your Score: {{ score }}
+                Puntuació: {{ score }}
               </div>
             </ion-col>
             <ion-col>
