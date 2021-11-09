@@ -1,4 +1,7 @@
-https://github.com/acacha/ComptadorIonic/blob/main/JAVASCRIPT%20TO%20IONIC%20VUE%20APP%20ACACHA_DEV.mp4
+
+
+https://user-images.githubusercontent.com/4015406/140897122-ba0798af-0c4c-40df-88f8-6c1c2575e30e.mp4
+
 
 # Screencasts
 
