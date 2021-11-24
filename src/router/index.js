@@ -12,8 +12,7 @@ const routes= [
     component: Home
   },
   {
-    path: '*',
-    name: 'Home',
+    path: '/*',
     component: Home
   }
 ]
