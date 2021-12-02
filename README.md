@@ -3,12 +3,21 @@
 
 https://user-images.githubusercontent.com/4015406/140897122-ba0798af-0c4c-40df-88f8-6c1c2575e30e.mp4
 
-
 # Screencasts
 
 https://tubeme.acacha.org/ionic
 
 Els tres primers vídeos són d'introducció a Javascript Modern, NodeJs i npm, Paquets/Bundles Javascript i eines modernes o paquet Bundlers com ViteJs, Webpack o Laravel Mix.
+
+# Autor
+
+- Github: https://github.com/acacha/
+- Sergi Tur Badenas: https://acacha.github.io
+- Instagram: https://instagram.com/acacha_dev
+- Github: https://github.com/acacha
+
+![image](https://user-images.githubusercontent.com/4015406/140644527-e186bf90-e556-4970-98ed-3f00c5f1af11.png)
+
 
 # Codi Font dels alumnes
 
