@@ -10,6 +10,14 @@ https://tubeme.acacha.org/ionic
 
 Els tres primers vídeos són d'introducció a Javascript Modern, NodeJs i npm, Paquets/Bundles Javascript i eines modernes o paquet Bundlers com ViteJs, Webpack o Laravel Mix.
 
+# Codi Font dels alumnes
+
+- Tur Badenas, Sergi  | https://github.com/acacha/ComptadorIonic
+
+# Projecte en explotació dels alumnes
+
+- Tur Badenas, Sergi  | https://comptador-ionic.onrender.com/
+
 ## Instal·lació
 
 https://www.youtube.com/watch?v=W7_nsDeDvvw&list=PLyasg1A0hpk1Ew0daOLwgkt02EcZwXrEY&index=4&t=918s
