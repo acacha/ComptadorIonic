@@ -22,10 +22,12 @@ Els tres primers vídeos són d'introducció a Javascript Modern, NodeJs i npm, 
 # Codi Font dels alumnes
 
 - Tur Badenas, Sergi  | https://github.com/acacha/ComptadorIonic
+- Pont Lopez, David | Palanka777 | https://github.com/Palanka777/ComptadorIonic.git
 
 # Projecte en explotació dels alumnes
 
 - Tur Badenas, Sergi  | https://comptador-ionic.onrender.com/
+- - Pont Lopez, David | Palanka777 | https://pxlnkx.github.io/comptador-ionic
 
 ## Instal·lació
 
