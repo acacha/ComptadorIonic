@@ -27,7 +27,7 @@ Els tres primers vídeos són d'introducció a Javascript Modern, NodeJs i npm, 
 # Projecte en explotació dels alumnes
 
 - Tur Badenas, Sergi  | https://comptador-ionic.onrender.com/
-- - Pont Lopez, David | Palanka777 | https://pxlnkx.github.io/comptador-ionic
+- Pont Lopez, David | Palanka777 | https://pxlnkx.github.io/comptador-ionic
 
 ## Instal·lació
 
