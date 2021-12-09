@@ -26,6 +26,7 @@ Els tres primers vídeos són d'introducció a Javascript Modern, NodeJs i npm, 
 - Goncear, Tudor | https://github.com/tgoncear/ComptadorIonic
 - Moreno Giraldo, Jhon | https://github.com/Jhon1348/ComptadorIonic
 - Pont Lopez, David | Palanka777 | https://github.com/Palanka777/ComptadorIonic.git
+- Gabriel Urs, | l3lackJack | https://github.com/l3lackJack/ComptadorIonic
 - Muñoz Zafra, Ferran | https://github.com/Fmunozzafra/ComptadorIonic
 - Tur Badenas, Sergi  | https://github.com/acacha/ComptadorIonic
 - Brusca Manchón, Albert  | https://github.com/Albert-Brusca/ComptadorIonic
@@ -37,6 +38,7 @@ Els tres primers vídeos són d'introducció a Javascript Modern, NodeJs i npm, 
 - Goncear, Tudor | https://comptador-ionic-lack.onrender.com/home
 - Moreno Giraldo, Jhon | https://jhon1348.github.io/comptador-ionic/home
 - Pont Lopez, David | Palanka777 | https://pxlnkx.github.io/comptador-ionic
+- Gabriel Urs, | l3lackJack | https://l3lackjack.github.io/comptador-ionic/
 - Muñoz Zafra, Ferran | https://fmunozzafra.github.io/comptador-ionic
 - Tur Badenas, Sergi  | https://comptador-ionic.onrender.com/
 - Brusca Manchón, Albert  | https://albert-brusca.github.io/comptador-ionic
