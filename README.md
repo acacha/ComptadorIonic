@@ -21,6 +21,7 @@ Els tres primers vídeos són d'introducció a Javascript Modern, NodeJs i npm, 
 
 # Codi Font dels alumnes
 
+- Avante Caballé, Marc | https://github.com/AvanteCaballe/ComptadorIonic
 - Goncear, Tudor | https://github.com/tgoncear/ComptadorIonic
 - Tur Badenas, Sergi  | https://github.com/acacha/ComptadorIonic
 - Pont Lopez, David | Palanka777 | https://github.com/Palanka777/ComptadorIonic.git
@@ -28,6 +29,7 @@ Els tres primers vídeos són d'introducció a Javascript Modern, NodeJs i npm, 
 
 # Projecte en explotació dels alumnes
 
+- Avante Caballé, Marc | https://avantecaballe.github.io/comptador-ionic/
 - Goncear, Tudor | https://comptador-ionic-lack.onrender.com/home
 - Tur Badenas, Sergi  | https://comptador-ionic.onrender.com/
 - Pont Lopez, David | Palanka777 | https://pxlnkx.github.io/comptador-ionic
